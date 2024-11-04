@@ -1,2 +1,5 @@
-# web-push-noti-mongodb
-Demo Web Push with MongoDB Change
+# Demo Web Push with MongoDB Change
+
+- MongoDB
+- Firebase
+- ExpressJS

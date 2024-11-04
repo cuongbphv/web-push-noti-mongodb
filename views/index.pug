@@ -1,0 +1,17 @@
+html
+  head
+    title #{title}
+    script(src="/client.js")
+  body
+    h1 #{message}
+    ul
+        each task in tasks
+            li #{task}
+            button(type='button', onclick='deleteTask("'+ task.id +'")' ) Delete
+
+    h3 #{'Form input'}
+    form(action='/new', method='POST')
+        p
+        | Task: 
+        input(type='text', name='task', value='')
+        input(type='submit', value='Add')
